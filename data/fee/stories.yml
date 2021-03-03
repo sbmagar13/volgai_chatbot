@@ -1,0 +1,142 @@
+version: "2.0"
+
+stories:
+- story: fee all affirm
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+        - course: "all"
+    - slot_was_set:
+        - course: "all"
+    - action: utter_all_fee_structure
+    - action: utter_interested_in_other_course
+    - intent: affirm
+    - action: utter_choice_course
+
+- story: fee all deny
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+        - course: "all"
+    - slot_was_set:
+        - course: "all"
+    - action: utter_all_fee_structure
+    - action: utter_interested_in_other_course
+    - intent: deny
+    - action: utter_goodbye
+
+- story: fee course computer engineering affirm
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+      - course: "computer"
+    - slot_was_set:
+      - course: "computer"
+    - action: utter_computer_engineering_fee
+    - action: utter_interested_in_other_course
+    - intent: affirm
+    - action: utter_choice_course
+
+- story: fee course computer engineering deny
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+        - course: "computer"
+    - slot_was_set:
+        - course: "computer"
+    - action: utter_computer_engineering_fee
+    - action: utter_interested_in_other_course
+    - intent: deny
+    - action: utter_goodbye
+
+- story: fee course civil engineering affirm
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+        - course: "civil"
+    - slot_was_set:
+        - course: "civil"
+    - action: utter_civil_engineering_fee
+    - action: utter_interested_in_other_course
+    - intent: affirm
+    - action: utter_choice_course
+
+- story: fee course civil engineering deny
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+        - course: "civil"
+    - slot_was_set:
+        - course: "civil"
+    - action: utter_civil_engineering_fee
+    - action: utter_interested_in_other_course
+    - intent: deny
+    - action: utter_goodbye
+
+- story: fee course elex engineering affirm
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+        - course: "elex"
+    - slot_was_set:
+        - course: "elex"
+    - action: utter_elex_engineering_fee
+    - action: utter_interested_in_other_course
+    - intent: affirm
+    - action: utter_choice_course
+
+- story: fee course elex engineering deny
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+        - course: "elex"
+    - slot_was_set:
+        - course: "elex"
+    - action: utter_elex_engineering_fee
+    - action: utter_interested_in_other_course
+    - intent: deny
+    - action: utter_goodbye
+
+- story: fee course architecture affirm more
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+        - course: "arch"
+    - slot_was_set:
+        - course: "arch"
+    - action: utter_arch_fee
+    - action: utter_interested_in_other_course
+    - intent: affirm
+    - action: utter_choice_course
+
+- story: fee course architecture deny more
+  steps:
+    - intent: fee_structure
+    - action: utter_choice_course
+    - intent: choice_course
+      entities:
+        - course: "arch"
+    - slot_was_set:
+        - course: "arch"
+    - action: utter_arch_fee
+    - action: utter_interested_in_other_course
+    - intent: deny
+    - action: utter_goodbye

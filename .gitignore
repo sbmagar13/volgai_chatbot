@@ -1,0 +1,6 @@
+# exclude virtualenv file
+rasa_env
+# exclude everything from models folder
+models/*
+# except for .gitkeep, so that the folder itself is included
+!models/.gitkeep

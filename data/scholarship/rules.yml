@@ -1,0 +1,12 @@
+version: "2.0"
+
+rules:
+  - rule: Say something
+    steps:
+      - intent: provide_any_scholarship
+      - action: utter_provide_any_scholarship
+
+  - rule: Say something
+    steps:
+      - intent: provide_more_than_one_scholarship
+      - action: utter_provide_more_than_one_scholarship

@@ -1,0 +1,29 @@
+version: "2.0"
+
+responses:
+  utter_all_fee_structure:
+    - text: "The fee for all the courses are mentioned below."
+
+  utter_choice_course:
+    - text: "
+    Which course are you intereseted on ?\n
+    - BE Computer\n
+    - BE Civil\n
+    - B Architecture\n
+    - B Electronics & Communications
+  "
+
+  utter_computer_engineering_fee:
+    - text: "BE Computer fee is Rs. 12,50,000."
+
+  utter_civil_engineering_fee:
+    - text: "BE Civil fee is Rs. 15,50,000."
+
+  utter_arch_fee:
+    - text: "B Architecture fee is Rs. 20,50,000."
+
+  utter_elex_engineering_fee:
+    - text: "BE Elex fee is Rs. 20,50,000."
+
+  utter_interested_in_other_course:
+    - text: "Are you interested in knowing other course fee as well?"

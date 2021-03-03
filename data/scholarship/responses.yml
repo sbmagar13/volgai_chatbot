@@ -1,0 +1,19 @@
+version: "2.0"
+
+responses:
+  utter_scholarship_general:
+    - text: "Follwing are the FAQs for scholarship.\n
+    i. Does college provide any scholarship.\n
+    ii. Can I get more than one scholarship.\n
+    Which one are you interested to know?"
+
+  utter_provide_more_than_one_scholarship:
+    - text: "No. But, the candidate can choose the better one for him/her."
+
+  utter_provide_any_scholarship:
+    - text:
+        "College provides full scholarship for the applicants of each program with minimun 75% in
+        +2 science or I.Sc., or Diploma in engineering and scoring the highest marks in the entrance
+        exam.Scholarship may be granted to economically needy, diligent and disciplined student.
+        On the basis of the marks secured in semester examination, college will provide scholarships
+        of 100%, 50% and 25%."

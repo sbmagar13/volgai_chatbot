@@ -1,0 +1,16 @@
+version: "2.0"
+
+stories:
+- story: provide any scholarship
+  steps:
+    - intent: scholarship_general
+    - action: utter_scholarship_general
+    - intent: select_one
+    - action: utter_provide_any_scholarship
+
+- story: provide any scholarship
+  steps:
+    - intent: scholarship_general
+    - action: utter_scholarship_general
+    - intent: select_two
+    - action: utter_provide_more_than_one_scholarship

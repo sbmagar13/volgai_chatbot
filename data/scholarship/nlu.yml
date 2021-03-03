@@ -1,0 +1,19 @@
+version: "2.0"
+
+nlu:
+  - intent: scholarship_general
+    examples: |
+      - Can I get information about scholarship
+      - How is scholarship given
+      - Procedure to get scholarship
+      - scholarship details
+
+  - intent: provide_any_scholarship
+    examples: |
+      - Does college provide any scholarship
+      - Is there any scholarship
+
+  - intent: provide_more_than_one_scholarship
+    examples: |
+      - Can a student be awarded with more than one scholarship
+      - Can I get more than one scholarship

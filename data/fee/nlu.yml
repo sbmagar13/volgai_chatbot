@@ -1,0 +1,25 @@
+version: "2.0"
+
+nlu:
+  - intent: fee_structure
+    examples: |
+      - What is the fee structure
+      - How much is the fee taken
+      - tell me the fee structure
+      - fee
+
+  - intent: choice_course
+    examples: |
+      - [All]{"entity": "course", "value": "all"}
+      - I am interested in [All]{"entity": "course", "value": "all"} courses
+      - [BE Civil]{"entity": "course", "value": "civil"}
+      - I am interested in [BE Civil]{"entity": "course", "value": "civil"} course
+      - [BE Computer]{"entity": "course", "value": "computer"}
+      - I am interested in [BE Computer]{"entity": "course", "value": "computer"} course
+      - [BE Electronics & Communication]{"entity": "course", "value": "elex"}
+      - I am interested in [BE Electronics & Communication]{"entity": "course", "value": "elex"} course
+      - [B Architecture]{"entity": "course", "value": "arch"}
+      - [Architecture]{"entity": "course", "value": "arch"}
+      - I am interested in [B Architecture]{"entity": "course", "value": "arch"} course
+      - I am interested in [B Arch]{"entity": "course", "value": "arch"} course
+      - I am interested in [Architecture]{"entity": "course", "value": "arch"} course
